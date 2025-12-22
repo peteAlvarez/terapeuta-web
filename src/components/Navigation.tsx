@@ -4,7 +4,8 @@ export default function Navigation() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h1 className="logo">Lorena González</h1>
+
+        <Link to="/" className="logo">Lorena González</Link>
 
         <ul className="nav-links">
           <li><Link to="/">Inicio</Link></li>
@@ -13,7 +14,6 @@ export default function Navigation() {
           <li><Link to="/contacto">Contacto</Link></li>
           <li><Link to="/testimonios">Testimonios</Link></li>
           <li><Link to="/blog">Blog</Link></li>
-
         </ul>
 
         <a
@@ -22,7 +22,6 @@ export default function Navigation() {
           rel="noopener noreferrer"
           className="whatsapp-btn"
         >
-        
           <span>Contactar por WhatsApp</span>
         </a>
 
