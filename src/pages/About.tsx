@@ -1,25 +1,26 @@
 import { useEffect } from "react";
 import lorenaImg from "../assets/lorena.jpg";
+import video from "../assets/video.mp4";
 
 export default function About() {
 
   // Autoplay del video al bajar
   useEffect(() => {
-    const video = document.querySelector(".auto-video") as HTMLVideoElement | null;
-    if (!video) return;
+    const videoEl = document.querySelector(".auto-video") as HTMLVideoElement | null;
+    if (!videoEl) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play();
+          videoEl.play();
         } else {
-          video.pause();
+          videoEl.pause();
         }
       },
       { threshold: 0.6 }
     );
 
-    observer.observe(video);
+    observer.observe(videoEl);
     return () => observer.disconnect();
   }, []);
 
@@ -99,17 +100,16 @@ export default function About() {
           onMouseEnter={(e) => e.currentTarget.play()}
           onMouseLeave={(e) => e.currentTarget.pause()}
         >
-
           Tu navegador no soporta videos.
         </video>
 
         <button
           className="sound-btn"
           onClick={() => {
-            const video = document.getElementById("aboutVideo") as HTMLVideoElement;
-            video.muted = false;
-            video.volume = 1;
-            video.play();
+            const v = document.getElementById("aboutVideo") as HTMLVideoElement;
+            v.muted = false;
+            v.volume = 1;
+            v.play();
           }}
         >
           🔊 Activar sonido
