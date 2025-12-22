@@ -1,3 +1,4 @@
+
 /* =========================
    RESET & BASE
 ========================= */
@@ -715,3 +716,25 @@ section h2 {
   }
 }
 
+/* ===== LAYOUT BASE ===== */
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.home {
+  min-height: calc(100vh - 80px); /* altura navbar */
+  display: flex;
+  flex-direction: column;
+}

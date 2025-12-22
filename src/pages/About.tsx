@@ -91,7 +91,7 @@ export default function About() {
       <div className="about-video">
         <video
           id="aboutVideo"
-          src="/src/assets/video.mp4"
+          src={video}
           muted
           playsInline
           preload="metadata"
@@ -99,6 +99,7 @@ export default function About() {
           onMouseEnter={(e) => e.currentTarget.play()}
           onMouseLeave={(e) => e.currentTarget.pause()}
         >
+
           Tu navegador no soporta videos.
         </video>
 

@@ -1,14 +1,13 @@
 export default function Home() {
   return (
-    <>
+    <main className="home">
       <section className="hero fade-in">
-        <h2>Terapia Ocupacional </h2>
+        <h2>Terapia Ocupacional</h2>
 
         <p>
           Atención integral enfocada en mejorar la autonomía, funcionalidad
           y calidad de vida en niños, adultos y adultos mayores.
         </p>
-
       </section>
 
       <section>
@@ -34,6 +33,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
