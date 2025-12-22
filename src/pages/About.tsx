@@ -1,26 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import lorenaImg from "../assets/lorena.jpg";
 import video from "../assets/video.mp4";
 
 export default function About() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   // Autoplay del video al bajar
   useEffect(() => {
-    const videoEl = document.querySelector(".auto-video") as HTMLVideoElement | null;
-    if (!videoEl) return;
+    if (!videoRef.current) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
+        if (!videoRef.current) return;
         if (entry.isIntersecting) {
-          videoEl.play();
+          videoRef.current.play();
         } else {
-          videoEl.pause();
+          videoRef.current.pause();
         }
       },
       { threshold: 0.6 }
     );
 
-    observer.observe(videoEl);
+    observer.observe(videoRef.current);
     return () => observer.disconnect();
   }, []);
 
@@ -91,14 +92,15 @@ export default function About() {
       {/* VIDEO */}
       <div className="about-video">
         <video
+          ref={videoRef}
           id="aboutVideo"
           src={video}
           muted
           playsInline
           preload="metadata"
           className="video-interactive auto-video"
-          onMouseEnter={(e) => e.currentTarget.play()}
-          onMouseLeave={(e) => e.currentTarget.pause()}
+          onMouseEnter={() => videoRef.current?.play()}
+          onMouseLeave={() => videoRef.current?.pause()}
         >
           Tu navegador no soporta videos.
         </video>
@@ -106,10 +108,10 @@ export default function About() {
         <button
           className="sound-btn"
           onClick={() => {
-            const v = document.getElementById("aboutVideo") as HTMLVideoElement;
-            v.muted = false;
-            v.volume = 1;
-            v.play();
+            if (!videoRef.current) return;
+            videoRef.current.muted = false;
+            videoRef.current.volume = 1;
+            videoRef.current.play();
           }}
         >
           🔊 Activar sonido
