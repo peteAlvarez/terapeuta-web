@@ -7,7 +7,8 @@
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && rm -rf docs && mv dist docs && cp docs/index.html docs/404.html"
   },
   "dependencies": {
     "react": "^18.2.0",
