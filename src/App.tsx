@@ -9,19 +9,23 @@ import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
+const isProd = import.meta.env.PROD;
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={isProd ? "/terapeuta-web" : "/"}>
       <Navigation />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/quienes-somos" element={<About />} />
-        <Route path="/servicios" element={<Services />} />
-        <Route path="/testimonios" element={<Testimonials />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contacto" element={<Contact />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quienes-somos" element={<About />} />
+          <Route path="/servicios" element={<Services />} />
+          <Route path="/testimonios" element={<Testimonials />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contacto" element={<Contact />} />
+        </Routes>
+      </main>
 
       <Footer />
     </BrowserRouter>
