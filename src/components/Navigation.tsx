@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logosinfondo.png"; // o la imagen que ya usas
 
 export default function Navigation() {
   return (
     <nav className="navbar">
       <div className="nav-container">
 
-        <Link to="/" className="logo">Lorena González</Link>
+        {/* LOGO */}
+        <Link to="/" className="brand">
+          <img
+            src={logo}
+            alt="Neuro Family"
+            className="brand-logo"
+          />
+        </Link>
 
         <ul className="nav-links">
           <li><Link to="/">Inicio</Link></li>
@@ -22,7 +30,7 @@ export default function Navigation() {
           rel="noopener noreferrer"
           className="whatsapp-btn"
         >
-          <span>Contactar por WhatsApp</span>
+          Contactar por WhatsApp
         </a>
 
       </div>
