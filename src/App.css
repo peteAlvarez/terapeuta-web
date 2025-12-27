@@ -503,22 +503,25 @@ section h2 {
 ========================= */
 
 @media (max-width: 768px) {
+
+  /* NAVBAR */
   .nav-links {
     display: flex;
     gap: 14px;
     font-size: 0.9rem;
   }
-}
 
-
+  /* HERO */
   .hero h2 {
     font-size: 2.3rem;
   }
 
+  /* TÍTULOS SECCIÓN */
   section h2 {
     font-size: 2rem;
   }
 
+  /* FOOTER */
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -527,6 +530,7 @@ section h2 {
   .footer-link {
     justify-content: center;
   }
+
 }
 
 /* =========================SERVICE PAGE /*/
