@@ -1013,7 +1013,10 @@ section h2 {
 
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
+    display: flex;        /* 🔥 vuelve a mostrarlas */
+    gap: 16px;
+    font-size: 0.9rem;
+    margin-left: 24px;
   }
 }
 
