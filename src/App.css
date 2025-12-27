@@ -1021,6 +1021,61 @@ section h2 {
 }
 
 
+/* =========================
+   HAMBURGER (VAQUITA)
+========================= */
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: #0369a1;
+}
+
+/* =========================
+   NAV MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #e0f2fe;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    padding: 24px 0;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .nav-button {
+    display: none; /* WhatsApp queda fuera del menú */
+  }
+}
+
+
+
 
 /* BOTÓN WHATSAPP */
 .whatsapp-btn {

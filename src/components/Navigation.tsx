@@ -1,39 +1,50 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logosinfondo.png"; // o la imagen que ya usas
+import logo from "../assets/logo.jpeg";
 
 export default function Navigation() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="nav-container">
 
         {/* LOGO */}
         <Link to="/" className="brand">
-          <img
-            src={logo}
-            alt="Neuro Family"
-            className="brand-logo"
-          />
+          <img src={logo} alt="NeuroFamily" className="brand-logo" />
+          <span className="brand-text">NeuroFamily</span>
         </Link>
 
-        <ul className="nav-links">
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/quienes-somos">Quiénes Somos</Link></li>
-          <li><Link to="/servicios">Servicios</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
-          <li><Link to="/testimonios">Testimonios</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+        {/* BOTÓN VAQUITA */}
+        <button
+          className={`hamburger ${open ? "open" : ""}`}
+          onClick={() => setOpen(!open)}
+          aria-label="Menú"
+        >
+          ☰
+        </button>
+
+        {/* LINKS */}
+        <ul className={`nav-links ${open ? "show" : ""}`}>
+          <li><Link to="/" onClick={() => setOpen(false)}>Inicio</Link></li>
+          <li><Link to="/quienes-somos" onClick={() => setOpen(false)}>Quiénes Somos</Link></li>
+          <li><Link to="/servicios" onClick={() => setOpen(false)}>Servicios</Link></li>
+          <li><Link to="/testimonios" onClick={() => setOpen(false)}>Testimonios</Link></li>
+          <li><Link to="/blog" onClick={() => setOpen(false)}>Blog</Link></li>
+          <li><Link to="/contacto" onClick={() => setOpen(false)}>Contacto</Link></li>
         </ul>
 
+        {/* WHATSAPP */}
         <a
-          href="https://wa.me/56964857043?text=Hola%20quiero%20agendar%20una%20consulta"
+          href="https://wa.me/56976683388"
           target="_blank"
           rel="noopener noreferrer"
-          className="whatsapp-btn"
+          className="whatsapp-btn nav-button"
         >
-          Contactar por WhatsApp
+          WhatsApp
         </a>
-
       </div>
     </nav>
   );
 }
+
