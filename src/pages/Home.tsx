@@ -3,7 +3,7 @@ export default function Home() {
     <main className="home">
       {/* HERO (NO SE TOCA) */}
       <section className="hero fade-in">
-        <h2>Neuro Family</h2>
+        <h2>NeuroFamily</h2>
 
         <p>
           Atención integral enfocada en mejorar la autonomía, funcionalidad
@@ -14,11 +14,11 @@ export default function Home() {
 
       {/* SECCIÓN – ¿EN QUÉ CONSISTE UNA TERAPIA OCUPACIONAL? */}
       <section className="therapy-section fade-in">
-        <h2>¿En qué consiste una Terapia Ocupacional?</h2>
+        <h2>¿En qué consisten nuestros servicios?</h2>
 
         <p className="therapy-intro">
           En <strong>NeuroFamily</strong> ofrecemos un acompañamiento terapéutico
-          estructurado, cercano y personalizado, orientado a potenciar el desarrollo,
+          cercano y personalizado, orientado a potenciar el desarrollo,
           la autonomía y el bienestar del niño y su familia.
         </p>
 
@@ -105,7 +105,7 @@ export default function Home() {
       {/* NUEVA SECCIÓN – LLAMADO A LA ACCIÓN */}
       <section className="fade-in" style={{ textAlign: "center" }}>
         <a
-          href="https://wa.me/56976683388?text=Hola%20quiero%20agendar%20una%20consulta"
+          href="https://wa.me/56976683388?text=Hola,%20quiero%20agendar%20una%20consulta"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-btn"

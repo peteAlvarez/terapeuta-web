@@ -1,3 +1,7 @@
+import telAzul from "../assets/telazul.png";
+import correo from "../assets/correo.png";
+import whatsapp from "../assets/wasapv.png";
+
 export default function Contact() {
   return (
     <section className="contact-section fade-in">
@@ -9,42 +13,41 @@ export default function Contact() {
       <div className="contact-card">
         <div className="contact-item">
           <img
-            src="/src/assets/telazul.png"
+            src={telAzul}
             alt="Teléfono"
             className="contact-icon"
           />
           <div>
             <h4>Teléfono</h4>
-            <p>+56 9 6485 7043</p>
+            <p>+56 9 7668 3388</p>
           </div>
         </div>
 
         <div className="contact-item">
           <img
-            src="/src/assets/correo.png"
+            src={correo}
             alt="Correo electrónico"
             className="contact-icon"
           />
           <div>
             <h4>Email</h4>
-            <p>contacto@lorenagonzalez.cl</p>
+            <p>lorenaagonzv@gmail.com</p>
           </div>
         </div>
 
         <a
-          href="https://wa.me/56964857043?text=Hola%20quiero%20agendar%20una%20consulta"
+          href="https://wa.me/56976683388?text=Hola%20quiero%20agendar%20una%20consulta"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-button"
         >
           <img
-            src="/src/assets/wasapv.png"
+            src={whatsapp}
             alt="WhatsApp"
             className="whatsapp-icon"
           />
           <span>Agendar por WhatsApp</span>
         </a>
-
       </div>
     </section>
   );

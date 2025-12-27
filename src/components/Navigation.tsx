@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logosinfondo.png";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -36,13 +36,14 @@ export default function Navigation() {
 
         {/* WHATSAPP */}
         <a
-          href="https://wa.me/56976683388"
+          href="https://wa.me/56976683388?text=Hola,%20quiero%20agendar%20una%20consulta"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-btn nav-button"
         >
-          WhatsApp
+          <span>WhatsApp</span>
         </a>
+
       </div>
     </nav>
   );

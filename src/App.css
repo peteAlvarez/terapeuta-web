@@ -483,10 +483,6 @@ section h2 {
    ANIMATIONS
 ========================= */
 
-.fade-in {
-  animation: fade 1s ease forwards;
-}
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -616,7 +612,7 @@ section h2 {
 
 
 .whatsapp-btn {
-  margin-top: 30 px;
+  margin-top: 30px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -1263,4 +1259,66 @@ section h2 {
   .therapy-card {
     padding: 28px 26px;
   }
+}
+
+
+
+
+/* HOME INTRO IMAGEN + TEXTO */
+.home-intro {
+  background: transparent;
+  padding: 80px 24px;
+}
+
+.home-intro-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.home-intro-image img {
+  width: 100%;
+  border-radius: 26px;
+  object-fit: cover;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.home-intro-text h2 {
+  text-align: left;
+  font-size: 2.6rem;
+  margin-bottom: 24px;
+  color: #0369a1; /* 🔥 texto visible */
+}
+
+.home-intro-text p {
+  font-size: 1.15rem;
+  color: #334155; /* 🔥 texto oscuro */
+  line-height: 1.75;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-intro-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-intro-text h2 {
+    text-align: center;
+  }
+}
+
+.home-intro {
+  background: #ffffff;
+  padding: 80px 24px;
+}
+
+
+/* HOME – elimina el efecto de cuadro */
+.home-intro {
+  max-width: none;
 }

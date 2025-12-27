@@ -7,8 +7,8 @@ export default function Footer() {
 
         {/* LOGO + MARCA */}
         <div className="footer-brand">
-          <h3>Neuro Family</h3>
-          <p>Centro de Terapia Ocupacional</p>
+          <h3>NeuroFamily</h3>
+          <p>Centro de atención familiar</p>
         </div>
 
         {/* INFO */}
