@@ -718,6 +718,13 @@ section h2 {
     transform: translateX(-50%);
   }
 }
+/* ===== CARRUSEL MÁS RÁPIDO EN CELULAR ===== */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 4s; /* 🔥 más rápido en móvil */
+  }
+}
+
 
 /* ===== LAYOUT BASE ===== */
 
