@@ -1,6 +1,7 @@
 import telAzul from "../assets/telazul.png";
 import correo from "../assets/correo.png";
 import whatsapp from "../assets/wasapv.png";
+import instagram from "../assets/instagram.png"; // ⬅ agrega este icono
 
 export default function Contact() {
   return (
@@ -11,7 +12,12 @@ export default function Contact() {
       </p>
 
       <div className="contact-card">
-        <div className="contact-item">
+
+        {/* TELÉFONO */}
+        <a
+          href="tel:+56976683388"
+          className="contact-item contact-link"
+        >
           <img
             src={telAzul}
             alt="Teléfono"
@@ -21,9 +27,13 @@ export default function Contact() {
             <h4>Teléfono</h4>
             <p>+56 9 7668 3388</p>
           </div>
-        </div>
+        </a>
 
-        <div className="contact-item">
+        {/* EMAIL */}
+        <a
+          href="mailto:lorenaagonzv@gmail.com"
+          className="contact-item contact-link"
+        >
           <img
             src={correo}
             alt="Correo electrónico"
@@ -33,21 +43,37 @@ export default function Contact() {
             <h4>Email</h4>
             <p>lorenaagonzv@gmail.com</p>
           </div>
-        </div>
+        </a>
 
+        {/* INSTAGRAM */}
+        <a
+          href="https://www.instagram.com/lore.terapiaocupacional/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-item contact-link"
+        >
+          <img
+            src={instagram}
+            alt="Instagram"
+            className="contact-icon"
+          />
+          <div>
+            <h4>Instagram</h4>
+            <p>@lore.terapiaocupacional</p>
+          </div>
+        </a>
+
+        {/* WHATSAPP */}
         <a
           href="https://wa.me/56976683388?text=Hola%20quiero%20agendar%20una%20consulta"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-button"
         >
-          <img
-            src={whatsapp}
-            alt="WhatsApp"
-            className="whatsapp-icon"
-          />
+          
           <span>Agendar por WhatsApp</span>
         </a>
+
       </div>
     </section>
   );

@@ -64,25 +64,7 @@ export default function Blog() {
         </article>
       </div>
 
-      {/* CTA FINAL */}
-      <div style={{ textAlign: "center", marginTop: "80px" }}>
-        <h3 style={{ marginBottom: "14px", color: "#0369a1" }}>
-          ¿Te gustaría recibir más contenido?
-        </h3>
-
-        <p style={{ maxWidth: "650px", margin: "0 auto 28px", color: "#475569" }}>
-          Publicamos contenido pensado para acompañarte en el proceso terapéutico,
-          entregando orientación clara y práctica para el día a día.
-        </p>
-
-        <a
-          href="/contacto"
-          className="whatsapp-button"
-          style={{ margin: "0 auto" }}
-        >
-          Contáctanos
-        </a>
-      </div>
+      
     </section>
   );
 }

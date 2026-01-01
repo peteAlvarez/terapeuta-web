@@ -41,7 +41,7 @@ export default function Navigation() {
           rel="noopener noreferrer"
           className="whatsapp-btn nav-button"
         >
-          <span>WhatsApp</span>
+          <span>Reserva tu hora</span>
         </a>
 
       </div>

@@ -10,51 +10,94 @@ import foto9 from "../assets/foto9.jpeg";
 import foto10 from "../assets/foto10.jpeg";
 import foto11 from "../assets/foto11.jpeg";
 
+import fono from "../assets/fono.jpeg";
+import teo from "../assets/teo.jpeg";
+import psico from "../assets/psico.jpeg";
+import asis from "../assets/asis.jpeg";
+
 export default function Services() {
   return (
     <section className="fade-in">
       <h2>Servicios</h2>
 
-      {/* Cuadros superiores (ACTUALIZADOS) */}
-      <div className="grid">
-        <div className="card">
+      {/* Cuadros superiores */}
+      <div className="grid services-grid">
+
+        <div className="card service-card">
+          <img src={teo} alt="Terapia Ocupacional" className="service-img" />
           <h3>Terapia Ocupacional</h3>
           <p>
             Intervención terapéutica enfocada en el desarrollo de habilidades
             funcionales, autonomía, participación y desempeño ocupacional en
             niños, niñas y adolescentes.
           </p>
+          <a
+            href="https://wa.me/56976683388?text=Hola,%20quiero%20reservar%20una%20hora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="service-btn"
+          >
+            Reserva tu hora
+          </a>
         </div>
 
-        <div className="card">
+        <div className="card service-card">
+          <img src={fono} alt="Fonoaudiología" className="service-img" />
           <h3>Fonoaudiología</h3>
           <p>
             Atención especializada en el desarrollo del lenguaje, comunicación,
             habla y alimentación, promoviendo una comunicación efectiva y
             significativa.
           </p>
+          <a
+            href="https://wa.me/56976683388?text=Hola,%20quiero%20reservar%20una%20hora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="service-btn"
+          >
+            Reserva tu hora
+          </a>
         </div>
 
-        <div className="card">
+        <div className="card service-card">
+          <img src={psico} alt="Psicopedagogía" className="service-img" />
           <h3>Psicopedagogía</h3>
           <p>
             Apoyo educativo y acompañamiento en procesos de aprendizaje,
             considerando las necesidades individuales y el contexto escolar de
             cada niño o niña.
           </p>
+          <a
+            href="https://wa.me/56976683388?text=Hola,%20quiero%20reservar%20una%20hora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="service-btn"
+          >
+            Reserva tu hora
+          </a>
         </div>
 
-        <div className="card">
+        <div className="card service-card">
+          <img src={asis} alt="Asistente Social" className="service-img" />
           <h3>Asistente Social</h3>
           <p>
             Acompañamiento psicosocial a niños y familias, orientado al acceso a
             redes de apoyo, fortalecimiento familiar y orientación social
             integral.
           </p>
+          <a
+            href="https://wa.me/56976683388?text=Hola,%20quiero%20reservar%20una%20hora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="service-btn"
+          >
+            Reserva tu hora
+          </a>
         </div>
+
       </div>
 
-      {/* 👉 INFO AGREGADA (NO MODIFICA LO ANTERIOR) */}
+      {/* INFO EXTRA */}
       <div className="services-extra">
         <h3>Áreas de atención</h3>
 
@@ -74,9 +117,7 @@ export default function Services() {
         </p>
       </div>
 
-      {/* ===================== */}
-      {/* CARRUSEL DE IMÁGENES */}
-      {/* ===================== */}
+      {/* CARRUSEL */}
       <div className="carousel-container">
         <div className="carousel-track">
           {[foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11].map(
