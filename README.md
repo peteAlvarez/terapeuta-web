@@ -1,13 +1,36 @@
-## Running React on Replit
+🧠 Terapeuta Web – Sitio Profesional de Terapia Ocupacional
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+Sitio web profesional desarrollado para presentar servicios de Terapia Ocupacional, enfocado en brindar información clara a pacientes y familias, además de facilitar el contacto y agendamiento de sesiones.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+La plataforma ofrece una experiencia moderna, rápida y responsiva, diseñada para transmitir confianza, profesionalismo y cercanía.
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+🌐 Sitio Web --> Accede al sitio publicado en: https://neurofamily.cl/
 
-### Getting Started
-- Hit run
-- Edit [App.tsx](#src/App.tsx) and watch it live update!
+✨ Características principales
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+🧑‍⚕️ Presentación profesional de la terapeuta
+
+🧠 Información sobre terapia ocupacional y neurodesarrollo
+
+📋 Sección de servicios especializados
+
+💬 Testimonios de pacientes y familias
+
+📝 Blog informativo
+
+📞 Contacto directo y agendamiento por WhatsApp
+
+🎥 Contenido multimedia interactivo
+
+📱 Diseño completamente responsivo
+
+🛠 Tecnologías utilizadas
+
+Este proyecto fue desarrollado utilizando tecnologías modernas de desarrollo web:
+
+- React 18
+- TypeScript
+- Vite
+- React Router
+- CSS moderno
+- GitHub Pages para despliegue
