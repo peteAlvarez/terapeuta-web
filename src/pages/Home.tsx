@@ -134,7 +134,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="whatsapp-btn"
           >
-            👉 Agenda una sesión
+             Agenda una sesión
           </a>
 
           <p style={{ marginTop: "16px" }}>
